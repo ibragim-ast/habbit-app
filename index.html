@@ -4,9 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Habbit App</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <script src="./app.js"></script>
+    <div class="app">
+      <div class="panel">
+        <img class="logo" src="./images/logo.svg" alt="Логотип Habbit App" />
+        <nav class="menu">
+          <div class="menu__list">
+            <button class="menu__item menu__item_active">
+              <img src="./images/dumbbell.svg" alt="Спорт" />
+            </button>
+            <button class="menu__item">
+              <img src="./images/water.svg" alt="Вода" />
+            </button>
+            <button class="menu__item">
+              <img src="./images/food.svg" alt="" />
+            </button>
+          </div>
+          <button class="menu__add">
+            <img src="./images/add.svg" alt="Добавить привычку" />
+          </button>
+        </nav>
+      </div>
+      <div class="content">
+        <header class="header">
+          <h1 class="header__title">Отжимания</h1>
+          <div class="progress">
+            <div class="progress__name">Прогресс</div>
+            <div class="progress__percent">80%</div>
+          </div>
+          <div class="progress__bar">
+            <div class="progress__cover-bar"></div>
+          </div>
+        </header>
+        <main></main>
+      </div>
+    </div>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>
