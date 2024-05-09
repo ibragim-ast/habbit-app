@@ -6,6 +6,7 @@ body {
   font-family: Comfortaa, sans-serif;
   margin: 0;
   background-color: #f3f6fd;
+  font-weight: 400;
 }
 
 .app {
@@ -82,6 +83,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__title {
@@ -105,4 +107,117 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #232360;
+}
+
+.progress__percent {
+  font-size: 12px;
+  line-height: 13px;
+  color: #768396;
+}
+
+.progress__bar {
+  width: 100%;
+  background: #e6e9ed;
+  border-radius: 4px;
+  height: 5px;
+  position: relative;
+}
+
+.progress__cover-bar {
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  border-radius: 4px;
+  background: #5051f9;
+}
+
+.main {
+  margin-top: 30px;
+}
+
+.habbit {
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.habbit__day {
+  background: #fbfaff;
+  border-radius: 10px 0 0 10px;
+  border-right: 1px solid #e7ebfb;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 20px 40px;
+  min-width: 150px;
+}
+
+.habbit__comment {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 20px 25px;
+}
+
+.habbit__delete {
+  margin-left: auto;
+  margin-right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border: 5px;
+  padding: 2px;
+}
+
+.habbit__delete:hover {
+  background: #eff2ff;
+  border-radius: 5px;
+}
+
+.habbit__form {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding: 0 10px 0 25px;
+  position: relative;
+}
+
+input {
+  background: #fff;
+  border: 1px solid #e7ebfb;
+  border-radius: 9px;
+  padding: 12px 20px;
+  font-family: Comfortaa, sans-serif;
+  flex: 1;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+input::placeholder {
+  color: #8899a8;
+}
+
+.input_icon {
+  padding-left: 45px;
+}
+
+.input__icon {
+  position: absolute;
+  top: 10px;
+  left: 45px;
+}
+
+.button {
+  background: #edecfe;
+  border-radius: 9px;
+  border: none;
+  font-size: 13px;
+  line-height: 14px;
+  color: #5051f9;
+  padding: 14px 30px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #dcdaff;
 }
